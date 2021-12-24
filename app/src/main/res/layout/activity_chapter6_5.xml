@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_base1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chapter6_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="205dp">
+
+        <Button
+            android:id="@+id/btn_base.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="기준1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_base2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="기준2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_base2"
+            android:layout_centerVertical="false"
+            android:layout_toRightOf="@id/btn_base.1"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_base.1"
+            android:layout_alignParentRight="true"
+            android:text="2" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
